@@ -1,6 +1,6 @@
 {
   "name": "dos-clock",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "work with MS-DOS dates and times",
   "main": "index.js",
   "scripts": {
