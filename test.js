@@ -12,3 +12,7 @@ var numberTime = new clock.time(23911);  // 11:43:14
 assert.equal(numberTime.hour,    11);
 assert.equal(numberTime.minutes, 43);
 assert.equal(numberTime.seconds, 14);
+
+// get originals back out
+assert.equal(numberDate.toDosDate(), 16649);
+assert.equal(numberTime.toDosTime(), 23911);
