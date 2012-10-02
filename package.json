@@ -13,5 +13,10 @@
     "time"
   ],
   "author": "alunny",
-  "license": "BSD"
+  "license": "BSD",
+  "homepage": "https://github.com/alunny/dos-clock",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/alunny/dos-clock.git"
+  }
 }
