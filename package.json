@@ -1,0 +1,17 @@
+{
+  "name": "dos-clock",
+  "version": "0.0.0",
+  "description": "work with MS-DOS dates and times",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "dos",
+    "date",
+    "time"
+  ],
+  "author": "alunny",
+  "license": "BSD"
+}
