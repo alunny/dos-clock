@@ -3,6 +3,10 @@ function DosTime(input) {
         this.hour       = (input >> 11);
         this.minutes    = ((input >> 5) & 0x3F);
         this.seconds    = (input & 0x1F) * 2;
+    } else if (input instanceof Date) {
+        this.hour       = input.getHours();
+        this.minutes    = input.getMinutes();
+        this.seconds    = input.getSeconds();
     }
 }
 
@@ -17,6 +21,10 @@ function DosDate(input) {
         this.year   = (input >> 9) + 1980;
         this.month  = ((input >> 5) & 0xF);
         this.day    = (input & 0x1F);
+    } else if (input instanceof Date) {
+        this.year   = input.getFullYear();
+        this.month  = input.getMonth() + 1;
+        this.day    = input.getDate();
     }
 }
 

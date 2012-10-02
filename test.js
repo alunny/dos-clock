@@ -16,3 +16,12 @@ assert.equal(numberTime.seconds, 14);
 // get originals back out
 assert.equal(numberDate.toDosDate(), 16649);
 assert.equal(numberTime.toDosTime(), 23911);
+
+// june 29th 2011, 11:30:08
+var jsDate = new Date('2011-06-29 11:30:08');
+
+var jsDateDate = new clock.date(jsDate);
+var jsDateTime = new clock.time(jsDate);
+
+assert.equal(jsDateDate.toDosDate(), 16093);
+assert.equal(jsDateTime.toDosTime(), 23492);
